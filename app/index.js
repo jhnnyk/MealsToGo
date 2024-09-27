@@ -1,12 +1,13 @@
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar'
 import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
+import { Searchbar } from 'react-native-paper'
 
 export default function App() {
   return (
     <>
       <SafeAreaView style={styles.container}>
         <View style={styles.search}>
-          <Text>search</Text>
+          <Searchbar placeholder="Search" />
         </View>
         <View style={styles.list}>
           <Text>list</Text>
@@ -24,7 +25,6 @@ const styles = StyleSheet.create({
   },
 
   search: {
-    backgroundColor: 'green',
     padding: 16,
   },
 
