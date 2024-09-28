@@ -1,11 +1,11 @@
 import styled from 'styled-components/native'
-import { StatusBar } from 'react-native'
+import { SafeAreaView, StatusBar } from 'react-native'
 import { Searchbar } from 'react-native-paper'
 import { RestaurantCard } from '../components/restaurant-card.component'
 
-const SafeArea = styled.SafeAreaView`
+const SafeArea = styled(SafeAreaView)`
   flex: 1;
-  margintop: ${StatusBar.currentHeight}px;
+  margin-top: ${StatusBar.currentHeight}px;
 `
 
 const SearchContainer = styled.View`
